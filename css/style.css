@@ -463,6 +463,48 @@ textarea {
 .section-wrapper {
 	background: #181A1C;
 }
+.section-wrapper .container {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.section-wrapper h2 {
+	color: #fff;
+	margin-top: 0;
+	text-align: center;
+}
+.section-wrapper p {
+	color: #fff;
+	font-size: 20px;
+	margin: 0 0 50px;
+	text-align: center;
+}
+.section-wrapper p span {
+	color: #FECE1A;
+}
+.skills-wrapper h3 {
+	color: #FECE1A;
+}
+.skills li {
+    margin-bottom: 30px;
+    background: #FFF;
+    height: 40px;
+    position: relative;
+}
+.skills li h3 {
+    position: relative;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    top: 12px;
+    left: 10px;
+    z-index: 1;
+    color: #181A1C;
+}
+.skills li .bar {
+    height: 40px;
+    position: absolute;
+    background-color: #FECE1A;
+}
 /* 6. Media Query */
 @media screen and (min-width: 480px) {
 }

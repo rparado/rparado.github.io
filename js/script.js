@@ -32,5 +32,15 @@
 			}
 		});
 
+		$('.skills > li > span').one('inview', function (event, visible) {
+	        if (visible == true) {
+	            $(this).each(function () {
+	                $(this).animate({
+	                    width: $(this).attr('data-width')
+	                }, 3000);
+	            });
+	        }
+	    });
+
 	});
 })(jQuery);
