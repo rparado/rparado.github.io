@@ -1,0 +1,506 @@
+/*------------------------------------------------------------------
+[Main Stylesheet]
+
+Project:    Table Tennis Coaching
+Version:    1.1
+Last change: 02/29/2016 [initial change]
+Assigned to: Rolando C. Parado
+
+[Color codes]
+
+Background: #ffffff (white)
+Content: #444444
+Header: #202020 (gray)
+
+a (standard): #f6f6f6
+a (visited): ##fe184a
+a (active): ##fe184a
+a (hover):  ##fe184a
+
+[Table of contents]
+
+1. Global styles
+2. Header
+3. Content
+4. Pre-footer
+5. Footer
+6. Media Query
+-------------------------------------------------------------------*/
+/* 1. Global */
+@font-face {
+    font-family: 'ralewaybold_italic';
+    src: url('../fonts/raleway-bolditalic_0-webfont.eot');
+    src: url('../fonts/raleway-bolditalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bolditalic_0-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bolditalic_0-webfont.woff') format('woff'),
+         url('../fonts/raleway-bolditalic_0-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bolditalic_0-webfont.svg#ralewaybold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold_0-webfont.eot');
+    src: url('../fonts/raleway-extrabold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-extrabold_0-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold_0-webfont.woff') format('woff'),
+         url('../fonts/raleway-extrabold_0-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-extrabold_0-webfont.svg#ralewayextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayextrabold_italic';
+    src: url('../fonts/raleway-extrabolditalic_0-webfont.eot');
+    src: url('../fonts/raleway-extrabolditalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-extrabolditalic_0-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extrabolditalic_0-webfont.woff') format('woff'),
+         url('../fonts/raleway-extrabolditalic_0-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-extrabolditalic_0-webfont.svg#ralewayextrabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewayitalic';
+    src: url('../fonts/raleway-italic_0-webfont.eot');
+    src: url('../fonts/raleway-italic_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-italic_0-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-italic_0-webfont.woff') format('woff'),
+         url('../fonts/raleway-italic_0-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-italic_0-webfont.svg#ralewayitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaymedium_italic';
+    src: url('../fonts/raleway-mediumitalic_0-webfont.eot');
+    src: url('../fonts/raleway-mediumitalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-mediumitalic_0-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-mediumitalic_0-webfont.woff') format('woff'),
+         url('../fonts/raleway-mediumitalic_0-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-mediumitalic_0-webfont.svg#ralewaymedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular_0-webfont.eot');
+    src: url('../fonts/raleway-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular_0-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular_0-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular_0-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular_0-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold_0-webfont.eot');
+    src: url('../fonts/raleway-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold_0-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold_0-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold_0-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold_0-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium_0-webfont.eot');
+    src: url('../fonts/raleway-medium_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-medium_0-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium_0-webfont.woff') format('woff'),
+         url('../fonts/raleway-medium_0-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-medium_0-webfont.svg#ralewaymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../fonts/sourcesanspro-bold-webfont.eot');
+    src: url('../fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('../fonts/sourcesanspro-light-webfont.eot');
+    src: url('../fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after { clear: both; }
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix { *zoom: 1; }
+* {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #202020;
+	text-transform: uppercase;
+	font-family: 'Roboto', Arial, sans-serif;
+    font-weight: normal;
+}
+h1 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 0;
+}
+h2 {font-size: 40px;}
+p {
+    margin: 0 0 30px;
+}
+a {
+    color: #f6f6f6;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+} 
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+a:visited,
+a:focus,
+a:link {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+}
+ul li {
+    list-style: none;
+}
+body {
+    color: #444444;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+textarea {
+	resize: none;
+}
+.outer-wrapper {
+	overflow: hidden;
+}
+.wp1,
+.wp2,
+.wp3,
+.wp4,
+.wp5,
+.wp6,
+.wp7,
+.wp8,
+.wp9 {
+	visibility: hidden;
+}
+.animated {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+        animation-duration: 1s;
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+}
+
+.fadeIn,
+.fadeInUp {
+	visibility: visible;
+}
+
+.delay-05s {
+	-webkit-animation-delay: 0.5s;
+		 -o-animation-delay: 0.5s;
+			animation-delay: 0.5s;
+}
+
+.delay-1s {
+	-webkit-animation-delay: 1s;
+		 -o-animation-delay: 1s;
+			animation-delay: 1s;
+}
+
+.delay-105s {
+	-webkit-animation-delay: 1.5s;
+		 -o-animation-delay: 1.5s;
+			animation-delay: 1.5s;
+}
+
+.delay-2s {
+	-webkit-animation-delay: 2s;
+		 -o-animation-delay: 2s;
+			animation-delay: 2s;
+}
+
+.delay-205s {
+	-webkit-animation-delay: 2.5s;
+		 -o-animation-delay: 2.5s;
+			animation-delay: 2.5s;
+}
+
+.delay-3s {
+	-webkit-animation-delay: 3s;
+		 -o-animation-delay: 3s;
+			animation-delay: 3s;
+}
+.zoom-in {
+	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+		transition: all 250ms ease;
+}
+.zoom-in:hover {
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+}
+.triangle {
+	margin: 0 auto;
+	text-align:center;
+	width: 0;
+	height: 0;
+	border-top: 30px solid #181A1C;
+	border-left: 585px outset transparent;
+	border-right: 585px outset transparent;
+	position: relative;
+	z-index: 2;
+}
+.radius {
+	border-radius: 50%;
+}
+/* 2. Header */
+.navbar {
+    background: #181A1C;
+    margin-bottom:0;
+    min-height:70px;
+    z-index: 100;
+}
+
+.navbar-fixed-top {
+    min-height:60px;
+    padding-top:0;
+}
+.navbar-inner {
+    background: #181A1C;
+    border-radius:0;
+    filter: none;
+    border: none;
+    box-shadow: none;
+}
+.navbar-fixed-top,
+.navbar-brand {
+    height: auto;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-toggle,
+.navbar-toggle.collapse {
+    border-radius: 0;
+    background: #FECE1A;
+    color: #000;
+}
+.navbar-default {
+	border-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    margin-top: 18px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar-collapse {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    float: none;
+    margin: 0;
+    width: 100%;
+}
+.container > .navbar-collapse {
+    margin: 0;
+}
+.nav > li > a {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-transform:uppercase;
+    line-height: 18px;
+    vertical-align: middle;
+    margin:10px 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+        box-shadow: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size:15px;
+    font-weight: bold;
+    text-shadow: none;
+    color: #fff;
+    transition: border-color 1s ease;
+}
+.nav > li:hover> a, 
+.nav > .active > a, 
+.nav > .active > a:hover, 
+.nav > .active > a:focus {
+    border: 1px solid #FECE1A;
+    color: #fff;
+    background-color: #181A1C;
+    transition: border-color 1s ease;
+}
+
+.developer-intro-wrapper {
+	padding-top: 65px;
+	width: 100%;
+    min-width: 320px;
+    position: relative;
+    margin:0 auto;
+    overflow: hidden;
+    background: #FECE1A;
+}
+.developer-intro .container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.intro-message {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.intro-message h1 {
+	margin-bottom: 15px;
+}
+.position p {
+	font-size: 24px;
+	margin: 0;
+}
+.intro-avatar img {
+	margin: 0 auto;
+}
+/* about */
+.section-wrapper {
+	background: #181A1C;
+}
+/* 6. Media Query */
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 640px) {
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-collapse {
+        float: right;
+        width: 510px;
+    }
+    .navbar {
+    	border-radius: 0;
+    }
+    .nav > li {
+        float: left;
+    }
+	.nav > li > a {
+		margin: 17px 3px;
+	}
+
+	.intro-message {
+		padding-top: 100px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-collapse {
+        width: 640px;
+    }
+    .nav > li > a {
+        padding: 10px 26px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    
+}
+@media screen and (min-width: 1200px) {
+   
+}
