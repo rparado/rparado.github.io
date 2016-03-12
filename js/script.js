@@ -55,24 +55,8 @@
 	            });
 	        }
 	    });
-
-		$('#project-grid').mixItUp({
-			animation: {
-				enable: false
-			},
-			callbacks: {
-				onMixLoad: function(){
-					$(this).mixItUp('setOptions', {
-						animation: {
-							enable: true,
-							effects: 'fade scale',
-							duration: 600,
-							easing: 'ease'	
-						},
-					});
-				}
-			}
-		});
+		/*project grid animation*/
+		$('#project-grid').mixItUp();
 
 		/*scroll to top*/
 		$('.scrollup').click(function () {
@@ -89,6 +73,24 @@
 			} else {
 				$(this).removeClass("animated fadeInDown");
 			}
+		});
+		/*waypoints*/
+		$('.waypoint-1').waypoint(function() {
+			$(this).addClass('animated fadeInUp');
+		}, {
+			offset: '75%'
+		});
+
+		$('.waypoint-2').waypoint(function(){
+			$(this).addClass('animated fadeInUp');
+		}, {
+			offset: '75%'
+		});
+
+		$('.waypoint-3').waypoint(function() {
+			$(this).addClass('animated fadeInUp')
+		}, {
+			offset: '75%'
 		});
 	});
 })(jQuery);

@@ -28,141 +28,6 @@ a (hover):  ##fe184a
 -------------------------------------------------------------------*/
 /* 1. Global */
 @font-face {
-	font-family: 'ralewaybold_italic';
-	src: url('../fonts/raleway-bolditalic_0-webfont.eot');
-	src: url('../fonts/raleway-bolditalic_0-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway-bolditalic_0-webfont.woff2') format('woff2'),
-		 url('../fonts/raleway-bolditalic_0-webfont.woff') format('woff'),
-		 url('../fonts/raleway-bolditalic_0-webfont.ttf') format('truetype'),
-		 url('../fonts/raleway-bolditalic_0-webfont.svg#ralewaybold_italic') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'ralewayextrabold';
-	src: url('../fonts/raleway-extrabold_0-webfont.eot');
-	src: url('../fonts/raleway-extrabold_0-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway-extrabold_0-webfont.woff2') format('woff2'),
-		 url('../fonts/raleway-extrabold_0-webfont.woff') format('woff'),
-		 url('../fonts/raleway-extrabold_0-webfont.ttf') format('truetype'),
-		 url('../fonts/raleway-extrabold_0-webfont.svg#ralewayextrabold') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'ralewayextrabold_italic';
-	src: url('../fonts/raleway-extrabolditalic_0-webfont.eot');
-	src: url('../fonts/raleway-extrabolditalic_0-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway-extrabolditalic_0-webfont.woff2') format('woff2'),
-		 url('../fonts/raleway-extrabolditalic_0-webfont.woff') format('woff'),
-		 url('../fonts/raleway-extrabolditalic_0-webfont.ttf') format('truetype'),
-		 url('../fonts/raleway-extrabolditalic_0-webfont.svg#ralewayextrabold_italic') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-@font-face {
-	font-family: 'ralewayitalic';
-	src: url('../fonts/raleway-italic_0-webfont.eot');
-	src: url('../fonts/raleway-italic_0-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway-italic_0-webfont.woff2') format('woff2'),
-		 url('../fonts/raleway-italic_0-webfont.woff') format('woff'),
-		 url('../fonts/raleway-italic_0-webfont.ttf') format('truetype'),
-		 url('../fonts/raleway-italic_0-webfont.svg#ralewayitalic') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'ralewaymedium_italic';
-	src: url('../fonts/raleway-mediumitalic_0-webfont.eot');
-	src: url('../fonts/raleway-mediumitalic_0-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway-mediumitalic_0-webfont.woff2') format('woff2'),
-		 url('../fonts/raleway-mediumitalic_0-webfont.woff') format('woff'),
-		 url('../fonts/raleway-mediumitalic_0-webfont.ttf') format('truetype'),
-		 url('../fonts/raleway-mediumitalic_0-webfont.svg#ralewaymedium_italic') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'ralewayregular';
-	src: url('../fonts/raleway-regular_0-webfont.eot');
-	src: url('../fonts/raleway-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway-regular_0-webfont.woff2') format('woff2'),
-		 url('../fonts/raleway-regular_0-webfont.woff') format('woff'),
-		 url('../fonts/raleway-regular_0-webfont.ttf') format('truetype'),
-		 url('../fonts/raleway-regular_0-webfont.svg#ralewayregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-@font-face {
-	font-family: 'ralewaybold';
-	src: url('../fonts/raleway-bold_0-webfont.eot');
-	src: url('../fonts/raleway-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway-bold_0-webfont.woff2') format('woff2'),
-		 url('../fonts/raleway-bold_0-webfont.woff') format('woff'),
-		 url('../fonts/raleway-bold_0-webfont.ttf') format('truetype'),
-		 url('../fonts/raleway-bold_0-webfont.svg#ralewaybold') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'ralewaymedium';
-	src: url('../fonts/raleway-medium_0-webfont.eot');
-	src: url('../fonts/raleway-medium_0-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway-medium_0-webfont.woff2') format('woff2'),
-		 url('../fonts/raleway-medium_0-webfont.woff') format('woff'),
-		 url('../fonts/raleway-medium_0-webfont.ttf') format('truetype'),
-		 url('../fonts/raleway-medium_0-webfont.svg#ralewaymedium') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-@font-face {
-	font-family: 'source_sans_probold';
-	src: url('../fonts/sourcesanspro-bold-webfont.eot');
-	src: url('../fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
-		 url('../fonts/sourcesanspro-bold-webfont.woff') format('woff'),
-		 url('../fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
-		 url('../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-@font-face {
-	font-family: 'source_sans_proregular';
-	src: url('../fonts/sourcesanspro-regular-webfont.eot');
-	src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-		 url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
-		 url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
-		 url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-@font-face {
-	font-family: 'source_sans_prolight';
-	src: url('../fonts/sourcesanspro-light-webfont.eot');
-	src: url('../fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
-		 url('../fonts/sourcesanspro-light-webfont.woff') format('woff'),
-		 url('../fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
-		 url('../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
-	font-weight: normal;
-	font-style: normal;
-
-}
-@font-face {
 	font-family: 'porta';
 	src: url('../fonts/pluton.eot?49924914');
 	src: url('../fonts/pluton.eot?49924914#iefix') format('embedded-opentype'),
@@ -281,15 +146,9 @@ textarea {
 .outer-wrapper {
 	overflow: hidden;
 }
-.wp1,
-.wp2,
-.wp3,
-.wp4,
-.wp5,
-.wp6,
-.wp7,
-.wp8,
-.wp9 {
+.waypoint-1,
+.waypoint-2,
+.waypoint-3 {
 	visibility: hidden;
 }
 .animated {
@@ -332,24 +191,6 @@ textarea {
 	-webkit-animation-delay: 1.5s;
 		 -o-animation-delay: 1.5s;
 			animation-delay: 1.5s;
-}
-
-.delay-2s {
-	-webkit-animation-delay: 2s;
-		 -o-animation-delay: 2s;
-			animation-delay: 2s;
-}
-
-.delay-205s {
-	-webkit-animation-delay: 2.5s;
-		 -o-animation-delay: 2.5s;
-			animation-delay: 2.5s;
-}
-
-.delay-3s {
-	-webkit-animation-delay: 3s;
-		 -o-animation-delay: 3s;
-			animation-delay: 3s;
 }
 .zoom-in {
 	-webkit-transform: scale(1, 1);
@@ -643,6 +484,21 @@ figure.thumbnail:hover .mask {
 .live-url a {
 	color: #fff;
 }
+/* services */
+.service-item {
+	text-align: center;
+}
+.service-image {
+	margin-bottom: 15px;
+}
+.service-details h3 {
+	color: #FECE1A;
+	margin-top: 0;
+}
+.service-details p {
+	margin-bottom: 0;
+	font-size: 18px;
+}
 /* scroll */
 .scrollup {
 	text-align: center;
@@ -674,7 +530,7 @@ figure.thumbnail:hover .mask {
 @media screen and (min-width: 768px) {
 	.navbar-collapse {
 		float: right;
-		width: 510px;
+		width: 569px;
 	}
 	.navbar {
 		border-radius: 0;
@@ -684,6 +540,7 @@ figure.thumbnail:hover .mask {
 	}
 	.nav > li > a {
 		margin: 17px 3px;
+		padding: 10px 8px;
 	}
 
 	.intro-message {
@@ -701,10 +558,10 @@ figure.thumbnail:hover .mask {
 
 @media screen and (min-width: 992px) {
 	.navbar-collapse {
-		width: 640px;
+		width: 658px;
 	}
 	.nav > li > a {
-		padding: 10px 26px;
+		padding: 10px 16px;
 	}
 	.skills li {
 		margin-right: 30px;
@@ -717,10 +574,14 @@ figure.thumbnail:hover .mask {
 		overflow: hidden;
 	}
 }
-@media screen and (min-width: 1024px) {
-	
-}
+
 @media screen and (min-width: 1200px) {
+	.navbar-collapse {
+		width: 777px;
+	}
+	.nav > li > a {
+	    padding: 10px 26px;
+	}
    .caption h3 {
 		font-size: 18px;
 	}
