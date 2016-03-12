@@ -56,7 +56,23 @@
 	        }
 	    });
 
-		$('#project-grid').mixitup();
+		$('#project-grid').mixItUp({
+			animation: {
+				enable: false
+			},
+			callbacks: {
+				onMixLoad: function(){
+					$(this).mixItUp('setOptions', {
+						animation: {
+							enable: true,
+							effects: 'fade scale',
+							duration: 600,
+							easing: 'ease'	
+						},
+					});
+				}
+			}
+		});
 
 		/*scroll to top*/
 		$('.scrollup').click(function () {

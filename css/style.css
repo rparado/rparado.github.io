@@ -547,6 +547,7 @@ textarea {
 	text-align: center;
 }
 .section-wrapper-yellow p {
+	color: #181A1C;
 	font-size: 20px;
 	margin-bottom: 0;
 	text-align: center;
@@ -564,10 +565,17 @@ textarea {
 	color: #000;
 	padding: 5px 10px;
 }
+div.mix {
+	margin-bottom: 30px;
+	display: none;
+	vertical-align: top;
+    -webkit-backface-visibility: hidden;
+}
 figure.thumbnail {
 	width: 100%;
     height: 100%;
     padding: 0;
+    margin-bottom: 0;
     overflow: hidden;
     position: relative;
     border: 0;
@@ -584,7 +592,7 @@ figure.thumbnail {
     transition: all 0.2s ease-in-out;
 }
 figure .mask {
-	opacity: 1;
+	opacity: 0.85;
     filter: alpha(opacity=85);
     top: 100%;
     left: 0;
@@ -597,8 +605,11 @@ figure .mask {
     -o-transition: all 0.2 s ease-out;
     -ms-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    padding: 68px 15px;
+    padding: 10px 15px;
     color: #fff;
+}
+figure .large-pad {
+	padding: 34px 15px;
 }
 figure .mask p,
 .live-url {
@@ -606,7 +617,7 @@ figure .mask p,
 	text-align: left;
 }
 .mask div {
-	padding: 8px 0;
+	padding: 3px 0;
 }
 .mask .text-color {
 	color: #FECE1A;
@@ -617,7 +628,7 @@ figure .mask p,
 .caption h3 {
 	color: #FECE1A;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 10px;
 }
 .caption p {
@@ -630,7 +641,7 @@ figure.thumbnail:hover .mask {
 	cursor: default;
 }
 .live-url a {
-	color: #23527c;
+	color: #fff;
 }
 /* scroll */
 .scrollup {
@@ -679,7 +690,7 @@ figure.thumbnail:hover .mask {
 		padding-top: 100px;
 	}
 	.skills li {
-		margin-right: 30px;
+		margin-right: 28px;
 		width: 48%;
 		float: left;
 	}
@@ -695,10 +706,28 @@ figure.thumbnail:hover .mask {
 	.nav > li > a {
 		padding: 10px 26px;
 	}
+	.skills li {
+		margin-right: 30px;
+	}
+	.caption h3 {
+		font-size: 14px;
+	}
+	div.mix {
+		height: 296px;
+		overflow: hidden;
+	}
 }
 @media screen and (min-width: 1024px) {
 	
 }
 @media screen and (min-width: 1200px) {
-   
+   .caption h3 {
+		font-size: 18px;
+	}
+	figure .mask {
+		padding: 62px 15px;
+	}
+	div.mix {
+		height: 342px;
+	}
 }
