@@ -388,12 +388,13 @@ textarea {
 	text-align: center;
 }
 .section-wrapper-yellow p {
-	color: #181A1C;
 	font-size: 20px;
 	margin-bottom: 0;
 	text-align: center;
 }
-/* portfolio */
+.section-wrapper-yellow p.text-color-gray {
+	color: #181A1C;
+}
 .porfolio-menu {
 	margin-bottom: 15px;
 }
