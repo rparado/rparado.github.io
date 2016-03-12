@@ -3,7 +3,7 @@
     
     <head>
         <meta charset=utf-8>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta description = "Web Developer">
         <title>Rolando Parado - Portfolio Website</title>
         <!-- Load Roboto font -->
@@ -37,8 +37,8 @@
 						<ul class="nav" id="top-navigation">
 							<li class="active"><a href="#home">Home</a></li>
 							<li><a href="#about">About</a></li>
-							<li><a href="#service">Services</a></li>
 							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#service">Services</a></li>
 							<li><a href="#contact">Contact</a></li>
 	                    </ul>
 					</div><!--/.nav-collapse -->
@@ -47,6 +47,23 @@
 			<div id="home" class="developer-intro-wrapper">
 				<div class="developer-intro">
 		   			<div class="container">
+		   				<!--
+						    PeoplePerHour Profile Widget
+						    The div#pph-hire me is the element
+						    where the iframe will be inserted.
+						    You may move this element wherever
+						    you need to display the widget
+						-->
+						<!-- <div id="pph-hireme"></div>
+						<script type="text/javascript">
+						(function(d, s) {
+						    var useSSL = 'https:' == document.location.protocol;
+						    var js, where = d.getElementsByTagName(s)[0],
+						    js = d.createElement(s);
+						    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2001071674/570604.js?width=300&height=135&orientation=vertical&theme=dark&rnd='+parseInt(Math.random()*10000, 10);
+						    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+						}(document, 'script'));
+						</script> -->
 		   				<div class="row">
 		   					<div class="intro-message col-xs-12 col-md-8">
 		   						<h1>Rolando Parado</h1>
@@ -61,7 +78,7 @@
 		   			</div>
 		   		</div>
 			</div><!--home-->
-			<div class="section-wrapper section-about" id="about">
+			<div class="section-wrapper-gray section-about" id="about">
 				<div class="container">
 					<h2>About me</h2>
 					<p>Hi there! I am Rolando, an experience <span class="text-color">Web Developer</span>. I love making websites with stunning effects and animations. I also love implementing designs and continue developing my skills.</p>
@@ -86,7 +103,7 @@
 							</li>
 							<li>
 								<span class="bar" data-width="90%"></span>
-                                <h3>Responsive Design</h3>
+                                <h3>Responsive Design (Bootstrap)</h3>
 							</li>
 							<li>
 								<span class="bar" data-width="80%"></span>
@@ -112,15 +129,96 @@
 								<span class="bar" data-width="70%"></span>
                                 <h3>Phonegap</h3>
 							</li>
+							<li>
+								<span class="bar" data-width="55%"></span>
+                                <h3>Angular JS</h3>
+							</li>
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div><!--about-->
+			<div class="section-wrapper-yellow section-portfolio" id="portfolio">
+				<div class="container">
+					<div class="portfolio-wrapper-text">
+						<h2>Portfolio</h2>
+						<p>Projects Developed</p>
+					</div>
+					<ul class="nav porfolio-menu">
+						<li class="filter" data-filter="all">
+							<a href="#noAction">All</a>
+						</li>
+						<li class="filter" data-filter="psdtohtml">
+							<a href="#noAction">PSD to HTML</a>
+						</li>
+						<li class="filter" data-filter="wordpress">
+							<a href="#noAction">WorPress</a>
+						</li>
+					</ul>
+					<div class="project">
+						<ul id="project-grid" class="thumbs row">
+							<li class="col-xs-12 col-sm-6 col-md-4 mix psdtohtml">
+								<figure class="thumbnail">
+									<img src="images/psd-agss.jpg" alt="agss" title="agss" />
+									<figcaption class="caption">
+										<h3>Acumen Global Sourcing Solutions</h3>
+										<p>Acumen Global Sourcing Solutions (AGSS) is a one-stop international import company </p>
+									</figcaption>									
+									<div class="mask">
+										<div class="client-name">
+											<p><span class="text-color">Client Name:</span> Acummen Global Sourcing Solutions</p>
+										</div>
+										<div class="date-created">
+											<p><span class="text-color">Date: </span> November 2015</p>
+										</div>
+										<div class="skill-use">
+											<p><span class="text-color">Skills: </span> HTML5, CSS3, JQuery, Photoshop</p>
+										</div>
+										
+										<div class="live-url">
+											<span class="text-color">Link:</span> <a href="http://www.agss.co.uk" target="_blank" title="acumen global sourcing solutions">http://www.agss.co.uk</a>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="col-xs-12 col-sm-6 col-md-4 mix wordpress">
+								<figure class="thumbnail">
+									<img class="img-responsive" src="images/wordpress-giannaso.jpg" alt="giannaso hair and beauty" title="iannaso hair and beauty" />
+									<figcaption class="caption">
+										<h3>Giannaso Hair and beauty</h3>
+										<p>Giannasso Hair &amp; Beauty Salon is one of the most sought after salons in London</p>
+									</figcaption>									
+									<div class="mask">
+										<div class="client-name">
+											<p><span class="text-color">Client Name:</span> Giannaso Hair and beauty</p>
+										</div>
+										<div class="date-created">
+											<p><span class="text-color">Date: </span> September 2015</p>
+										</div>
+										<div class="skill-use">
+											<p><span class="text-color">Skills: </span> HTML5, CSS3, JQuery, Photoshop, Wordpress, PHP</p>
+										</div>
+										
+										<div class="live-url">
+											<span class="text-color">Link:</span> <a href="http://www.giannasso.co.uk/" target="_blank" title="giannaso hair and beauty">http://www.giannasso.co.uk/</a>
+										</div>
+									</div>
+								</figure>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div><!--portfolio-->
+			<div class="scrollup">
+				<a href="#">
+					<i class="icon-up-open"></i>
+				</a>
+			</div><!--scrollup-->
 	    </div>
 	
         <!-- Include javascript -->
         <script src="js/jquery-1.11.3.js"></script>
         <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </body>
