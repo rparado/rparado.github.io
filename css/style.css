@@ -524,7 +524,7 @@ figure.thumbnail:hover .mask {
 }
 /* testimonials */
 .section-testimonials {
-	padding-bottom: 90px;
+	padding-bottom: 50px;
 }
 .border-bottom-color {
 	border-bottom: 1px solid #181A1C;
@@ -559,7 +559,7 @@ figure.thumbnail:hover .mask {
 }
 /* contact */
 .section-contact .container {
-	padding-top: 50px;
+	padding-top: 120px;
 }
 .hire-me-widget {
 	text-align: center;
