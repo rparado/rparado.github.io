@@ -106,6 +106,7 @@ h6 {
 	text-transform: uppercase;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: 100;
+	margin-top: 0;
 }
 h1 {
 	color: #fff;
@@ -284,6 +285,7 @@ textarea {
 	margin: 0;
 }
 .nav > li > a {
+	background: none;
 	font-family: 'Roboto', Arial, sans-serif;
 	text-transform:uppercase;
 	line-height: 18px;
@@ -332,7 +334,7 @@ textarea {
 }
 .position p {
 	font-size: 24px;
-	margin: 0;
+	margin: 0 0 15px;
 }
 .intro-avatar img {
 	margin: 0 auto;
@@ -345,7 +347,7 @@ textarea {
 	font-weight: 100;
 }
 .section-wrapper-gray .container {
-	padding-top: 40px;
+	padding-top: 50px;
 	padding-bottom: 40px;
 }
 .section-wrapper-gray h2 {
@@ -389,6 +391,9 @@ textarea {
 /* portfolio */
 .section-wrapper-yellow {
 	background: #FECE1A;
+}
+.section-wrapper-yellow .container {
+	padding-top: 50px;
 }
 .portfolio-wrapper-text {
 	border-bottom: 1px solid #181A1C;
@@ -519,7 +524,7 @@ figure.thumbnail:hover .mask {
 }
 /* testimonials */
 .section-testimonials {
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 .border-bottom-color {
 	border-bottom: 1px solid #181A1C;
@@ -553,8 +558,15 @@ figure.thumbnail:hover .mask {
 	font-weight: 700;
 }
 /* contact */
+.section-contact .container {
+	padding-top: 50px;
+}
+.hire-me-widget {
+	text-align: center;
+}
 .social-row-wrapper {
 	text-align: center;
+	margin-bottom: 30px;
 }
 .social-row {
 	display: inline-block;
@@ -564,6 +576,7 @@ figure.thumbnail:hover .mask {
 	display: inline-block;
 	line-height: 32px;
     padding: 10px 10px;
+    margin-bottom: 15px;
     font-family: 'Porta', Arial;
     font-size: 50px;
     transition: margin 0.4s;
@@ -612,6 +625,9 @@ figure.thumbnail:hover .mask {
 }
 /* 6. Media Query */
 @media screen and (min-width: 480px) {
+	.social-row li {
+		margin-bottom: 0;
+	}
 }
 
 @media screen and (min-width: 640px) {

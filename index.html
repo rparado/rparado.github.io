@@ -23,7 +23,7 @@
 	    	<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -48,23 +48,7 @@
 			<div id="home" class="developer-intro-wrapper">
 				<div class="developer-intro">
 		   			<div class="container">
-		   				<!--
-						    PeoplePerHour Profile Widget
-						    The div#pph-hire me is the element
-						    where the iframe will be inserted.
-						    You may move this element wherever
-						    you need to display the widget
-						-->
-						<!-- <div id="pph-hireme"></div>
-						<script type="text/javascript">
-						(function(d, s) {
-						    var useSSL = 'https:' == document.location.protocol;
-						    var js, where = d.getElementsByTagName(s)[0],
-						    js = d.createElement(s);
-						    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2001071674/570604.js?width=300&height=135&orientation=vertical&theme=dark&rnd='+parseInt(Math.random()*10000, 10);
-						    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-						}(document, 'script'));
-						</script> -->
+		   				
 		   				<div class="row">
 		   					<div class="intro-message col-xs-12 col-md-8">
 		   						<h1>Rolando Parado</h1>
@@ -82,7 +66,7 @@
 			<div class="section-wrapper-gray section-about" id="about">
 				<div class="container">
 					<h2>About me</h2>
-					<p>Hi there! I am Rolando, an experience <span class="text-color">Web Developer</span> for more than 3 years. i create website with stunning effects and animation with due to client requirements. I also love creating website with ecommerce support.</p>
+					<p>Hi there! I am Rolando, an experience <span class="text-color">Web Developer</span> for more than 3 years. I create website with stunning effects and animation with due to client requirements. I also love creating website with ecommerce support.</p>
 					<div class="skills-wrapper">
 						<h3>Skills</h3>
 						<ul class="skills">
@@ -133,6 +117,14 @@
 							<li>
 								<span class="bar" data-width="55%"></span>
                                 <h3>Angular JS</h3>
+							</li>
+							<li>
+								<span class="bar" data-width="80%"></span>
+                                <h3>API Integration</h3>
+							</li>
+							<li>
+								<span class="bar" data-width="80%"></span>
+                                <h3>Agile Methodology</h3>
 							</li>
 						</ul>
 					</div>
@@ -611,6 +603,25 @@
 								</a>
 							</li>
 						</ul>
+					</div>
+					<div class="hire-me-widget">
+						<!--
+						    PeoplePerHour Profile Widget
+						    The div#pph-hire me is the element
+						    where the iframe will be inserted.
+						    You may move this element wherever
+						    you need to display the widget
+						-->
+						<div id="pph-hireme"></div>
+						<script type="text/javascript">
+						(function(d, s) {
+						    var useSSL = 'https:' == document.location.protocol;
+						    var js, where = d.getElementsByTagName(s)[0],
+						    js = d.createElement(s);
+						    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2001071674/570604.js?width=300&height=135&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+						    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+						}(document, 'script'));
+						</script>
 					</div>
 				</div>
 			</div>

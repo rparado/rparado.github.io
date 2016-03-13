@@ -16,6 +16,30 @@
 			}
 		});
 
+		 $('a[href*=#]').each(function () {
+            if (filterPath(location.pathname) == filterPath(this.pathname) && location.hostname == this.hostname && this.hash.replace(/#/, '')) {
+                var $targetId = $(this.hash),
+                    $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+
+                if ($target) {
+
+                    $(this).click(function () {
+
+                        //Hack collapse top navigation after clicking
+                        topMenu.parent().attr('style', 'height:0px').removeClass('in'); //Close navigation
+                        $('.navbar .navbar-toggle').addClass('collapsed');
+
+                        var targetOffset = $target.offset().top - 63;
+                        $('html, body').animate({
+                            scrollTop: targetOffset
+                        }, 800);
+                        return false;
+                    });
+                }
+            }
+        });
+
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {
 			    $('.navbar').addClass('sticky animated fadeInDown');
@@ -25,7 +49,7 @@
 			    $('.scrollup').fadeOut();
 			}
 
-			var fromTop = $(this).scrollTop() + topMenuHeight + 20;
+			var fromTop = $(this).scrollTop() + topMenuHeight + 10;
 
 			// Get id of current scroll item
 			var cur = scrollItems.map(function () {
@@ -100,3 +124,6 @@
 		});
 	});
 })(jQuery);
+function filterPath(string) {
+	return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
+}
