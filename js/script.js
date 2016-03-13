@@ -25,7 +25,7 @@
 			    $('.scrollup').fadeOut();
 			}
 
-			var fromTop = $(this).scrollTop() + topMenuHeight + 10;
+			var fromTop = $(this).scrollTop() + topMenuHeight + 20;
 
 			// Get id of current scroll item
 			var cur = scrollItems.map(function () {
@@ -56,7 +56,13 @@
 	        }
 	    });
 		/*project grid animation*/
-		$('#project-grid').mixItUp();
+		$('#project-grid').mixItUp({
+			animation: {
+				duration: 400,
+				effects: 'fade translateZ(-360px) stagger(34ms)',
+				easing: 'ease'
+			}
+		});
 
 		/*scroll to top*/
 		$('.scrollup').click(function () {
