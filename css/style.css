@@ -146,6 +146,7 @@ textarea {
 .outer-wrapper {
 	overflow: hidden;
 }
+/* helper class */
 .waypoint-1,
 .waypoint-2,
 .waypoint-3 {
@@ -170,7 +171,6 @@ textarea {
 		animation-name: fadeInDown;
 }
 
-.fadeIn,
 .fadeInUp {
 	visibility: visible;
 }
@@ -486,8 +486,12 @@ figure.thumbnail:hover .mask {
 	color: #fff;
 }
 /* services */
+.section-services {
+	padding-bottom: 30px;
+}
 .service-item {
 	text-align: center;
+	margin-bottom: 30px;
 }
 .service-image {
 	margin-bottom: 15px;
@@ -498,7 +502,61 @@ figure.thumbnail:hover .mask {
 }
 .service-details p {
 	margin-bottom: 0;
-	font-size: 18px;
+	font-size: 17px;
+}
+/* testimonials */
+.border-bottom-color {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+}
+.border-bottom-color p {
+	margin-bottom: 0;
+}
+.testimonial-item-wrapper {
+	margin-bottom: 15px;
+}
+.testimonial-item p {
+	background: #181A1C;
+	padding: 15px;
+	margin: 0;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 18px;
+}
+.top-arrow {
+	margin-left: 10px;
+    width: 0;
+    border-top: 10px solid #181A1C;
+    border-left: 20px outset transparent;
+    border-right: 20px outset transparent;
+}
+.photo img {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-top: 8px;
+}
+.testimonial-source {
+	float: left;
+	width: 80%;
+	padding: 10px 15px;
+}
+.client-name,
+.client-source {
+	color: #181A1C;
+}
+.client-name {
+	font-weight: 700;
+}
+/* footer */
+.footer {
+	background: #181A1C;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px;
 }
 /* scroll */
 .scrollup {
@@ -573,6 +631,9 @@ figure.thumbnail:hover .mask {
 	div.mix {
 		height: 296px;
 		overflow: hidden;
+	}
+	.service-item {
+		margin-bottom: 0;
 	}
 }
 
