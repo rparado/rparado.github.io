@@ -308,10 +308,13 @@ textarea {
 .nav > .active > a:focus {
 	border: 1px solid #FECE1A;
 	color: #fff;
-	background-color: #181A1C;
+	background-color: transparent;
 	transition: border-color 1s ease;
 }
-
+.nav > li > a:focus,
+.nav > li > a:link {
+	background: transparent;
+}
 .developer-intro-wrapper {
 	padding-top: 65px;
 	width: 100%;
