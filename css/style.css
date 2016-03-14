@@ -96,14 +96,6 @@ a (hover):  ##fe184a
 	background: none;
 	text-shadow: none;
 }
-html {
-	-webkit-touch-callout:none; 
-	-webkit-user-select:none; 
-	-khtml-user-select:none; 
-	-moz-user-select:none; 
-	-ms-user-select:none; 
-		user-select:none;
-} 
 h1,
 h2,
 h3,
@@ -159,6 +151,14 @@ body {
 }
 textarea {
 	resize: none;
+}
+html {
+	-webkit-touch-callout:none; 
+	-webkit-user-select:none; 
+	-khtml-user-select:none; 
+	-moz-user-select:none; 
+	-ms-user-select:none; 
+		user-select:none;
 }
 .outer-wrapper {
 	overflow: hidden;
@@ -242,6 +242,7 @@ textarea {
 }
 .section-wrapper-gray {
 	border-top: 14px solid #FECE1A;
+	background: #181A1C;
 }
 /* 2. Header */
 .navbar {
@@ -336,8 +337,8 @@ textarea {
 	background: #FECE1A;
 }
 .developer-intro .container {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 .intro-message {
 	text-align: center;
@@ -355,9 +356,6 @@ textarea {
 	margin: 0 auto;
 }
 /* about */
-.section-wrapper-gray {
-	background: #181A1C;
-}
 .section-about p {
 	font-weight: 100;
 }
