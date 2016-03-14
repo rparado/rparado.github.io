@@ -346,6 +346,7 @@ textarea {
 .position p {
 	font-size: 24px;
 	margin: 0 0 15px;
+	line-height: 28px;
 }
 .intro-avatar img {
 	margin: 0 auto;
