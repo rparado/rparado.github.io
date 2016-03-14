@@ -87,6 +87,15 @@ a (hover):  ##fe184a
  * Customize the background color to match your design.
  */
 
+::-moz-selection {
+	background: none;
+	text-shadow: none;
+}
+
+::selection {
+	background: none;
+	text-shadow: none;
+}
 h1,
 h2,
 h3,
