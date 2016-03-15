@@ -356,6 +356,9 @@ html {
 	margin: 0 auto;
 }
 /* about */
+a.resume-download {
+	color: #23527c;
+}
 .section-about p {
 	font-weight: 100;
 }
