@@ -193,7 +193,13 @@
 				 
 				$.ajax({
 				    type: "POST",
-				    url: 'includes/mail.php',
+				    headers: {
+				    	'Authorization':'Basic xxxxxxxxxxxxx',
+				        'X_CSRF_TOKEN':'xxxxxxxxxxxxxxxxxxxx',
+				        'Content-Type':'application/json'
+				    }
+				    url: $('#form-contact').attr('action'),
+				    dataType: 'json',
 				    data: dataString,
 				    timeout: 6000,
 				    error: function (request, error) {
