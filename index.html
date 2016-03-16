@@ -578,7 +578,7 @@
 								<strong>Well done! </strong>Your message has been sent.
 							</div>
 							<div id="error-on-send" class="alert alert-danger" role="alert">There was an error sending your email.</div>
-							<form id="form-contact" action="includes/mail.php">
+							<form id="form-contact" action="includes/mail.php" method="post" enctype="multipart/form-data">
 								<div class="form-group">
 									<input type="text" required name = "name" class="form-control" id="fullname" placeholder="Fullname">
 									<div class="error left-align" id="err-name">Please enter fullname.</div>

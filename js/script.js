@@ -193,7 +193,7 @@
 				 
 				$.ajax({
 				    type: "POST",
-				    url: $('#form-contact').attr('action'),
+				    url: 'includes/mail.php',
 				    data: dataString,
 				    timeout: 6000,
 				    error: function (request, error) {
