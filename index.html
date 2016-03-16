@@ -578,22 +578,22 @@
 								<strong>Well done! </strong>Your message has been sent.
 							</div>
 							<div id="error-on-send" class="alert alert-danger" role="alert">There was an error sending your email.</div>
-							<form id="form-contact" action="includes/mail.php" method="post" enctype="multipart/form-data">
+							<form id="form-contact" action="includes/thankyou.php" method="post" enctype="multipart/form-data">
 								<div class="form-group">
 									<input type="text" required name = "name" class="form-control" id="fullname" placeholder="Fullname">
-									<div class="error left-align" id="err-name">Please enter fullname.</div>
+									
 								</div>
 								<div class="form-group">
 									<input type="email" required name = "email" class="form-control" id="email" placeholder="Email">
-									<div class="error left-align" id="err-email">Please enter valid email adress.</div>
+									
 								</div>
 								<div class="form-group">
 									<input type="text" required name = "subject" class="form-control" id="subject" placeholder="Subject">
-									<div class="error left-align" id="err-subject">Please enter your subject.</div>
+									
 								</div>
 								<div class="form-group">
 									 <textarea class="form-control" required name="message" id="message" placeholder="Message" cols="10" rows="10"></textarea>
-									 <div class="error left-align" id="err-message">Please enter your comment.</div>
+									
 								</div>
 								<button type="submit" class="btn btn-default btn-submit">Submit</button>
 							</form>
