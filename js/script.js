@@ -197,7 +197,7 @@
 				    	'Authorization':'Basic xxxxxxxxxxxxx',
 				        'X_CSRF_TOKEN':'xxxxxxxxxxxxxxxxxxxx',
 				        'Content-Type':'application/json'
-				    }
+				    },
 				    url: $('#form-contact').attr('action'),
 				    dataType: 'json',
 				    data: dataString,
