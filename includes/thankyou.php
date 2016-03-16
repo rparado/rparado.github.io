@@ -16,9 +16,9 @@ if (isset($_POST)){
     $xname = "Admin";
     $zemail = "rolandwebdeveloper@gmail.com";
     $zname = "Admin";
-    require_once 'include/class.phpmailer.php';
-    require_once 'include/class.smtp.php';
-    $message = file_get_contents('include/mail.html');
+    require_once 'includes/class.phpmailer.php';
+    require_once 'includes/class.smtp.php';
+    $message = file_get_contents('includes/mail.html');
     $message = str_replace('%vname%', $vname, $message);
     $message = str_replace('%vsubject%', $vsubject, $message);
     $message = str_replace('%vemail%', $vemail, $message);
