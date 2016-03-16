@@ -9,17 +9,18 @@ if (!empty($_POST)){
   $_POST  = multiDimensionalArrayMap('cleanData', $_POST);
 
   //your email adress 
-  $emailTo ="yourmail@yoursite.com"; //"yourmail@yoursite.com";
+  $emailTo ="rolandwebdeveloper@gmail.com"; //"yourmail@yoursite.com";
 
   //from email adress
-  $emailFrom ="contact@yoursite.com"; //"contact@yoursite.com";
+  //$emailFrom ="contact@yoursite.com"; //"contact@yoursite.com";
 
   //email subject
-  $emailSubject = "Mail from Porta";
+  /*$emailSubject = "Mail from rparado.github.io";*/
 
   $name = $_POST["name"];
   $email = $_POST["email"];
-  $comment = $_POST["comment"];
+  $subject = $_POST["subject"];
+  $comment = $_POST["message"];
   if($name == "")
    $data['success'] = false;
  
@@ -39,8 +40,8 @@ if (!empty($_POST)){
 
   $headers = "MIME-Version: 1.0" . "\r\n"; 
   $headers .= "Content-type:text/html; charset=utf-8" . "\r\n"; 
-  $headers .= "From: <$emailFrom>" . "\r\n";
-  mail($emailTo, $emailSubject, $message, $headers);
+  $headers .= "From: <$email>" . "\r\n";
+  mail($emailTo, $subject, $message, $headers);
 
   $data['success'] = true;
   echo json_encode($data);

@@ -12,7 +12,7 @@
         <!-- Load css styles -->
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
         
         <!-- Fav and touch icons -->
         <link rel="shortcut icon" href="images/favicon.png">
@@ -571,58 +571,86 @@
 				<div class="container">
 					<h2>Get in touch</h2>
 					<p>Think I can help your project? Get in touch with me.</p>
-					<div class="social-row-wrapper">
-						<ul class="social-row">
-							<li>
-								<a class="social-link" href="mailto:rolandwebdeveloper@gmail.com" title="email me">
-									<span class="icon-email"></span>
-								</a>
-							</li>
-							<li>
-								<a class="social-link" href="https://www.facebook.com/roland.parado" title="roland parado's facebook profile" target="_blank">
-									<span class="icon-facebook-circled"></span>
-								</a>
-							</li>
-							<li>
-								<a class="social-link" href="https://www.linkedin.com/in/roland-parado-09b66a62?trk=nav_responsive_tab_profile_pic" title="roland parado's linkedin profile" target="_blank">
-									<span class="icon-linkedin-circled"></span>
-								</a>
-							</li>
-							<li>
-								<a class="social-link" href="https://plus.google.com/u/0/103260413549106409316/posts" title="roland parado's google+ profile" target="_blank">
-									<span class="icon-gplus-circled"></span>
-								</a>
-							</li>
-							<li>
-								<a class="social-link" href="https://github.com/rparado" title="roland parado's github profile" target="_blank">
-									<span class="icon-github-circled"></span>
-								</a>
-							</li>
-							<li>
-								<a class="social-link" href="https://web.skype.com/en/" title="roland parado's skype profile" target="_blank">
-									<span class="icon-skype-circled"></span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="hire-me-widget">
-						<!--
-						    PeoplePerHour Profile Widget
-						    The div#pph-hire me is the element
-						    where the iframe will be inserted.
-						    You may move this element wherever
-						    you need to display the widget
-						-->
-						<div id="pph-hireme"></div>
-						<script type="text/javascript">
-						(function(d, s) {
-						    var useSSL = 'https:' == document.location.protocol;
-						    var js, where = d.getElementsByTagName(s)[0],
-						    js = d.createElement(s);
-						    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2001071674/570604.js?width=300&height=135&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
-						    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-						}(document, 'script'));
-						</script>
+					<div class="row">
+						<div class="col-xs-12 col-md-6 contact-form-wrapper">
+							<h2>Contact Me!</h2>
+							<div id="success-on-send" class="alert alert-success" role="alert">
+								<strong>Well done! </strong>Your message has been sent.
+							</div>
+							<div id="error-on-send" class="alert alert-danger" role="alert">There was an error sending your email.</div>
+							<form id="form-contact" action="includes/mail.php" method="post" enctype="multipart/form-data">
+								<div class="form-group">
+									<input type="text" required name = "name" class="form-control" id="fullname" placeholder="Fullname">
+									<div class="error left-align" id="err-name">Please enter fullname.</div>
+								</div>
+								<div class="form-group">
+									<input type="email" required name = "email" class="form-control" id="email" placeholder="Email">
+									<div class="error left-align" id="err-email">Please enter valid email adress.</div>
+								</div>
+								<div class="form-group">
+									<input type="text" required name = "subject" class="form-control" id="subject" placeholder="Subject">
+									<div class="error left-align" id="err-subject">Please enter your subject.</div>
+								</div>
+								<div class="form-group">
+									 <textarea class="form-control" required name="message" id="message" placeholder="Message" cols="10" rows="10"></textarea>
+									 <div class="error left-align" id="err-message">Please enter your comment.</div>
+								</div>
+								<button type="submit" class="btn btn-default btn-submit">Submit</button>
+							</form>
+						</div>
+						<div class="social-row-wrapper col-xs-12 col-md-6">
+							<ul class="social-row">
+								<li>
+									<a class="social-link" href="mailto:rolandwebdeveloper@gmail.com" title="email me">
+										<span class="icon-email"></span>
+									</a>
+								</li>
+								<li>
+									<a class="social-link" href="https://www.facebook.com/roland.parado" title="roland parado's facebook profile" target="_blank">
+										<span class="icon-facebook-circled"></span>
+									</a>
+								</li>
+								<li>
+									<a class="social-link" href="https://www.linkedin.com/in/roland-parado-09b66a62?trk=nav_responsive_tab_profile_pic" title="roland parado's linkedin profile" target="_blank">
+										<span class="icon-linkedin-circled"></span>
+									</a>
+								</li>
+								<li>
+									<a class="social-link" href="https://plus.google.com/u/0/103260413549106409316/posts" title="roland parado's google+ profile" target="_blank">
+										<span class="icon-gplus-circled"></span>
+									</a>
+								</li>
+								<li>
+									<a class="social-link" href="https://github.com/rparado" title="roland parado's github profile" target="_blank">
+										<span class="icon-github-circled"></span>
+									</a>
+								</li>
+								<li>
+									<a class="social-link" href="https://web.skype.com/en/" title="roland parado's skype profile" target="_blank">
+										<span class="icon-skype-circled"></span>
+									</a>
+								</li>
+							</ul>
+							<div class="hire-me-widget">
+							<!--
+							    PeoplePerHour Profile Widget
+							    The div#pph-hire me is the element
+							    where the iframe will be inserted.
+							    You may move this element wherever
+							    you need to display the widget
+							-->
+							<div id="pph-hireme"></div>
+								<script type="text/javascript">
+								(function(d, s) {
+								    var useSSL = 'https:' == document.location.protocol;
+								    var js, where = d.getElementsByTagName(s)[0],
+								    js = d.createElement(s);
+								    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2001071674/570604.js?width=300&height=135&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+								    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+								}(document, 'script'));
+								</script>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -648,6 +676,6 @@
         <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
         <script type="text/javascript" src="js/waypoints.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/script.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

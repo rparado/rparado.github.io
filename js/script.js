@@ -123,6 +123,7 @@
 			offset: '75%'
 		});
 
+		/*disable right click*/
 		function clickIE() {if (document.all) {(message);return false;}} 
 		function clickNS(e) {if 
 		(document.layers||(document.getElementById&&!document.all)) { 
@@ -131,7 +132,94 @@
 		{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
 		else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
 		document.oncontextmenu=new Function("return false") 
+
+		/*ajax sent mail*/
+		$('#success-on-send, #error-on-send').hide();
+		$(".btn-submit").click(function () {
+
+			var name = $('input#name').val(); // get the value of the input field
+			var error = false;
+			if (name == "" || name == " ") {
+				$('#err-name').show(500);
+				$('#err-name').delay(4000);
+				$('#err-name').animate({
+				    height: 'toggle'
+				}, 500, function () {
+			    // Animation complete.
+				});
+				error = true; // change the error state to true
+			}
+
+			var emailCompare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; // Syntax to compare against input
+			var email = $('input#email').val().toLowerCase(); // get the value of the input field
+			if (email == "" || email == " " || !emailCompare.test(email)) {
+			$('#err-email').show(500);
+			$('#err-email').delay(4000);
+			$('#err-email').animate({
+			    height: 'toggle'
+			}, 500, function () {
+			    // Animation complete.
+			});
+			error = true; // change the error state to true
+			}
+
+			var subject = $('input#subject').val(); // get the value of the input field
+			if (subject == "" || subject == " ") {
+			$('#err-subject').show(500);
+			$('#err-subject').delay(4000);
+			$('#err-subject').animate({
+			    height: 'toggle'
+			}, 500, function () {
+			    // Animation complete.
+			});
+			error = true; // change the error state to true
+			}
+
+
+			var message = $('textarea#message').val(); // get the value of the input field
+			if (message == "" || message == " ") {
+			$('#err-message').show(500);
+			$('#err-message').delay(4000);
+			$('#err-message').animate({
+			    height: 'toggle'
+			}, 500, function () {
+			    // Animation complete.
+			});
+			error = true; // change the error state to true
+			}
+
+			if (error == false) {
+				var dataString = $('#form-contact').serialize(); // Collect data from form
+				 
+				$.ajax({
+				    type: "POST",
+				    url: $('#form-contact').attr('action'),
+				    data: dataString,
+				    timeout: 6000,
+				    error: function (request, error) {
+				    },
+				    success: function (response) {
+				    	
+				        if (response.success) {
+				            $('#success-on-send').show();
+				            $("#name").val('');
+				            $("#email").val('');
+				            $("#subject").val('');
+				            $("#message").val('');
+				        } else {
+				            $('#error-on-send').show();
+				        }
+				    }
+				});
+				return false;
+			}
+
+			return false; // stops user browser being directed to the php file
+		});
+
 	});
+
+
 })(jQuery);
 function filterPath(string) {
 	return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');

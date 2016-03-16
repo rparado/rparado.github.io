@@ -579,6 +579,27 @@ figure.thumbnail:hover .mask {
 	font-weight: 700;
 }
 /* contact */
+/*forms*/
+.invisible {
+	display: none;
+}
+.form-control:focus {
+	border: 1px solid #FECE1A;
+}
+.btn-submit,
+.btn-submit:hover {
+	background: #FECE1A;
+	color: #181A1C;
+	border: none;
+	font-weight: 700;
+	width: 100px;
+	margin: 0 auto;
+	height: 42px;
+}
+.error {
+    color: #CF0000;
+    display: none;
+}
 .section-contact .container {
 	padding-top: 120px;
 }
