@@ -133,7 +133,6 @@
 		else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
 		document.oncontextmenu=new Function("return false") 
 
-
 	});
 
 
