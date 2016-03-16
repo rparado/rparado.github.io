@@ -579,12 +579,22 @@ figure.thumbnail:hover .mask {
 	font-weight: 700;
 }
 /* contact */
+.contact-form-wrapper {
+	margin-bottom: 30px;
+}
 /*forms*/
 .invisible {
 	display: none;
 }
 .form-control:focus {
 	border: 1px solid #FECE1A;
+}
+#contact h3 {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	text-align: center;
 }
 .btn-submit,
 .btn-submit:hover {
@@ -665,6 +675,21 @@ figure.thumbnail:hover .mask {
 	top: 7px;
 	color: #fff;
 }
+/* thank you */
+.thank-you-wrapper {
+	background: #FECE1A;
+	padding: 136px 0 50px;
+	text-align: center;
+}
+.thank-you-wrapper h1 {
+	margin-bottom: 10px;
+}
+.thank-you-wrapper p {
+	font-size: 19px;
+}
+.g-recaptcha {
+	margin-bottom: 15px;
+}
 /* 6. Media Query */
 @media screen and (min-width: 480px) {
 	.social-row li {
@@ -726,6 +751,12 @@ figure.thumbnail:hover .mask {
 	}
 	.testimonial-item-wrapper {
 		margin-bottom: 0;
+	}
+	.contact-form-wrapper {
+		m,margin-bottom: 0;
+	}
+	.social-row {
+		margin-bottom: 20px;
 	}
 }
 

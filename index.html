@@ -16,6 +16,7 @@
         
         <!-- Fav and touch icons -->
         <link rel="shortcut icon" href="images/favicon.png">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     
     <body>
@@ -573,7 +574,7 @@
 					<p>Think I can help your project? Get in touch with me.</p>
 					<div class="row">
 						<div class="col-xs-12 col-md-6 contact-form-wrapper">
-							<h2>Contact Me!</h2>
+							<h3>Email me</h3>
 							<form id="form-contact" action="http://formspree.io/rolandwebdeveloper@gmail.com" method="post" enctype="multipart/form-data">
 								<div class="form-group">
 									<input type="text" required name = "name" class="form-control" id="fullname" placeholder="Fullname">
@@ -588,11 +589,14 @@
 									 <textarea class="form-control" required name="message" id="message" placeholder="Message" cols="10" rows="10"></textarea>
 								</div>
 								<input type="hidden" name="_next" value="//rparado.github.io/thankyou.html" />
-								<input type="text" name="_gotcha" style="display:none;" />
+								<div class="form-group">
+									<div class="g-recaptcha" data-sitekey="6LdT8xoTAAAAAO8ENamkD3cVMMM8npEWneftBsow"></div>
+								</div>
 								<button type="submit" class="btn btn-default btn-submit">Submit</button>
 							</form>
 						</div>
 						<div class="social-row-wrapper col-xs-12 col-md-6">
+							<h3>Connect me on social sites</h3>
 							<ul class="social-row">
 								<li>
 									<a class="social-link" href="mailto:rolandwebdeveloper@gmail.com" title="email me">
