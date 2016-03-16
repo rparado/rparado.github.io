@@ -587,7 +587,7 @@ figure.thumbnail:hover .mask {
 	display: none;
 }
 .form-control:focus {
-	border: 1px solid #FECE1A;
+	border: 1px solid #ff0000;
 }
 #contact h3 {
 	border-bottom: 1px solid #fff;
